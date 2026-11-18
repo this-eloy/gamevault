@@ -1,5 +1,5 @@
-#7a5b3e - marrom
-#fafafa - branco
-#fa4b00 - laranja
-#cdbdae - bege
-#1f1f1f - preto
+#e4ded0 - creme
+#abccbd - verde-agua-claro
+#7dbeb8 - verde-agua
+#181619 - preto
+#e32f21 - vermelho
