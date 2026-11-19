@@ -32,19 +32,18 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.gamevault.ui.components.MenuLateral
-import com.example.gamevault.ui.theme.Bege
-import com.example.gamevault.ui.theme.Branco
-import com.example.gamevault.ui.theme.Laranja
-import com.example.gamevault.ui.theme.Marrom
+import com.example.gamevault.ui.theme.VerdeAgua
+import com.example.gamevault.ui.theme.Creme
+import com.example.gamevault.ui.theme.Vermelho
 import com.example.gamevault.ui.theme.Preto
 import kotlinx.coroutines.launch
 
 // cores temporárias
 private val coresCapas = listOf(
-    Marrom, Bege,
-    Laranja, Marrom,
-    Bege, Laranja,
-    Marrom, Bege
+    VerdeAgua, Creme,
+    Vermelho, VerdeAgua,
+    Creme, Vermelho,
+    VerdeAgua, Creme
 )
 
 @Composable
@@ -72,12 +71,12 @@ fun BibliotecaScreen() {
                     Icon(
                         imageVector = Icons.Default.Menu,
                         contentDescription = "Abrir menu",
-                        tint = Branco
+                        tint = Creme
                     )
                 }
                 Text(
                     text = "Biblioteca",
-                    color = Branco,
+                    color = Creme,
                     fontSize = 26.sp,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(start = 8.dp)

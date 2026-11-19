@@ -19,10 +19,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.gamevault.ui.theme.Bege
-import com.example.gamevault.ui.theme.Branco
-import com.example.gamevault.ui.theme.Laranja
-import com.example.gamevault.ui.theme.Marrom
+import com.example.gamevault.ui.theme.Creme
+import com.example.gamevault.ui.theme.Vermelho
+import com.example.gamevault.ui.theme.VerdeAgua
+import com.example.gamevault.ui.theme.VerdeAguaClaro
 import com.example.gamevault.ui.theme.Preto
 
 private val itensDoMenu = listOf(
@@ -45,7 +45,7 @@ fun MenuLateral(
             ModalDrawerSheet(drawerContainerColor = Preto) {
                 Text(
                     text = "GameVault",
-                    color = Laranja,
+                    color = VerdeAgua,
                     fontSize = 22.sp,
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.padding(24.dp)
@@ -59,12 +59,12 @@ fun MenuLateral(
                         onClick = { onItemClick(nome) },
                         modifier = Modifier.padding(NavigationDrawerItemDefaults.ItemPadding),
                         colors = NavigationDrawerItemDefaults.colors(
-                            selectedContainerColor = Marrom,
+                            selectedContainerColor = Vermelho,
                             unselectedContainerColor = Color.Transparent,
-                            selectedIconColor = Branco,
-                            unselectedIconColor = Bege,
-                            selectedTextColor = Branco,
-                            unselectedTextColor = Bege
+                            selectedIconColor = Creme,
+                            unselectedIconColor = Creme,
+                            selectedTextColor = Creme,
+                            unselectedTextColor = Creme
                         )
                     )
                 }
