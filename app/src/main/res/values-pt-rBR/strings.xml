@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GameVault</string>
+    <string name="btn_library">Library</string>
+    <string name="game_image_desc">Capa do jogo</string>
+    <string name="sync_steam">Sincronizar com Steam</string>
+    <string name="sync_error">Não foi possível sincronizar</string>
+</resources>

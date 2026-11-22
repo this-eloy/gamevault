@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GameVault" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/cor_primaria</item>
+        <item name="colorOnPrimary">@color/cor_sobre_primaria</item>
+        <item name="colorSecondary">@color/cor_secundaria</item>
+        <item name="colorOnSecondary">@color/cor_sobre_secundaria</item>
+        <item name="android:colorBackground">@color/fundo</item>
+        <item name="colorSurface">@color/superficie</item>
+        <item name="colorOnBackground">@color/texto_primario</item>
+        <item name="colorOnSurface">@color/texto_primario</item>
+        <item name="colorOutline">@color/borda</item>
+    </style>
+
+    <style name="Theme.GameVault" parent="Base.Theme.GameVault" />
+</resources>
