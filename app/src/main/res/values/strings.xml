@@ -4,4 +4,18 @@
     <string name="game_image_desc">Game cover</string>
     <string name="sync_steam">Sync with Steam</string>
     <string name="sync_error">Could not sync</string>
+    <string name="titulo_biblioteca">Library</string>
+    <string name="games_qtd">0 games</string>
+    <string name="searchbar_placeholder">Search in the library</string>
+    <string name="filtro_todos">All</string>
+    <string name="filtro_avaliados">Rated</string>
+    <string name="filtro_sem_nota">Unrated</string>
+    <string name="menu_biblioteca">Library</string>
+    <string name="menu_buscar">Search</string>
+    <string name="menu_lancamentos">New</string>
+    <string name="menu_perfil">Profile</string>
+
+
+
+
 </resources>

@@ -4,4 +4,15 @@
     <string name="game_image_desc">Capa do jogo</string>
     <string name="sync_steam">Sincronizar com Steam</string>
     <string name="sync_error">Não foi possível sincronizar</string>
+    <string name="titulo_biblioteca">Biblioteca</string>
+    <string name="games_qtd">0 jogos</string>
+    <string name="searchbar_placeholder">Buscar na biblioteca</string>
+    <string name="filtro_todos">Todos</string>
+    <string name="filtro_avaliados">Avaliados</string>
+    <string name="filtro_sem_nota">Sem nota</string>
+    <string name="menu_biblioteca">Biblioteca</string>
+    <string name="menu_buscar">Buscar</string>
+    <string name="menu_lancamentos">Lançamentos</string>
+    <string name="menu_perfil">Perfil</string>
+
 </resources>
