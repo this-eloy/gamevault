@@ -15,4 +15,30 @@
     <string name="menu_lancamentos">Lançamentos</string>
     <string name="menu_perfil">Perfil</string>
 
+    <string name="catalogar_jogo">Catalogar jogo</string>
+    <string name="catalogar_subtitulo">Busque na Steam e toque em um jogo para adicionar</string>
+    <string name="catalogar_hint">Nome do jogo</string>
+    <string name="catalogar_sem_resultados">Nenhum jogo encontrado</string>
+    <string name="catalogar_erro">Não foi possível buscar na Steam. Verifique sua conexão.</string>
+    <string name="catalogar_adicionado">%1$s adicionado à biblioteca</string>
+    <string name="catalogar_ja_existe">%1$s já está na biblioteca</string>
+
+    <string name="perfil_titulo">Perfil</string>
+    <string name="perfil_alterar_foto">Alterar foto</string>
+    <string name="perfil_nome_hint">Nome de usuário</string>
+    <string name="perfil_descricao_hint">Sobre você</string>
+    <string name="perfil_salvar">Salvar perfil</string>
+    <string name="perfil_salvo">Perfil salvo</string>
+    <string name="perfil_foto_erro">Não foi possível carregar a foto</string>
+    <string name="perfil_stat_total">Jogos</string>
+    <string name="perfil_stat_catalogados">Catalogados</string>
+    <string name="perfil_stat_steam">Da Steam</string>
+    <string name="perfil_secao_catalogados">Catalogados por mim</string>
+    <string name="perfil_secao_steam">Sincronizados da Steam</string>
+    <string name="perfil_vazio_catalogados">Nenhum jogo catalogado ainda. Use Catalogar jogo na biblioteca.</string>
+    <string name="perfil_vazio_steam">Nenhum jogo da Steam ainda. Toque em Sincronizar com Steam na biblioteca.</string>
+    <string name="perfil_editar">Editar perfil</string>
+    <string name="perfil_sem_nome">Jogador</string>
+    <string name="perfil_sem_descricao">Nenhuma descrição adicionada.</string>
+    <string name="cancelar">Cancelar</string>
 </resources>

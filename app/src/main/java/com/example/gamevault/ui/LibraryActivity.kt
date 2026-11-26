@@ -1,5 +1,6 @@
 package com.example.gamevault.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -34,11 +35,28 @@ class LibraryActivity : AppCompatActivity() {
         binding.recyclerGames.adapter = adapter
 
         binding.btnSync.setOnClickListener { syncFromSteam() }
+
+        setupBottomNav() // <- faltava
     }
 
     override fun onResume() {
         super.onResume()
         loadGames()
+    }
+
+    // <- faltava essa função inteira
+    private fun setupBottomNav() {
+        binding.bottomNavigation.selectedItemId = R.id.nav_biblioteca
+        binding.bottomNavigation.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_biblioteca -> true
+                R.id.nav_perfil -> {
+                    startActivity(Intent(this, ProfileActivity::class.java))
+                    false
+                }
+                else -> false
+            }
+        }
     }
 
     private fun loadGames() {
@@ -62,7 +80,8 @@ class LibraryActivity : AppCompatActivity() {
                                     appId = steamGame.appid,
                                     name = steamGame.name ?: "?",
                                     imageUri = "https://cdn.cloudflare.steamstatic.com/steam/apps/${steamGame.appid}/header.jpg",
-                                    playtimeMinutes = steamGame.playtime_forever ?: 0
+                                    playtimeMinutes = steamGame.playtime_forever ?: 0,
+                                    source = Game.SOURCE_STEAM
                                 )
                             )
                         }

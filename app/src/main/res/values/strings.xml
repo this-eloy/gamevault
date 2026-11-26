@@ -15,7 +15,30 @@
     <string name="menu_lancamentos">New</string>
     <string name="menu_perfil">Profile</string>
 
+    <string name="catalogar_jogo">Catalog game</string>
+    <string name="catalogar_subtitulo">Search Steam and tap a game to add it</string>
+    <string name="catalogar_hint">Game name</string>
+    <string name="catalogar_sem_resultados">No games found</string>
+    <string name="catalogar_erro">Could not search Steam. Check your connection.</string>
+    <string name="catalogar_adicionado">%1$s added to your library</string>
+    <string name="catalogar_ja_existe">%1$s is already in your library</string>
 
-
-
+    <string name="perfil_titulo">Profile</string>
+    <string name="perfil_alterar_foto">Change photo</string>
+    <string name="perfil_nome_hint">Username</string>
+    <string name="perfil_descricao_hint">About you</string>
+    <string name="perfil_salvar">Save profile</string>
+    <string name="perfil_salvo">Profile saved</string>
+    <string name="perfil_foto_erro">Could not load the photo</string>
+    <string name="perfil_stat_total">Games</string>
+    <string name="perfil_stat_catalogados">Cataloged</string>
+    <string name="perfil_stat_steam">From Steam</string>
+    <string name="perfil_secao_catalogados">Cataloged by me</string>
+    <string name="perfil_secao_steam">Synced from Steam</string>
+    <string name="perfil_vazio_catalogados">Nothing cataloged yet. Use Catalog game in the library.</string>
+    <string name="perfil_vazio_steam">No Steam games yet. Tap Sync with Steam in the library.</string>
+    <string name="perfil_editar">Edit profile</string>
+    <string name="perfil_sem_nome">Player</string>
+    <string name="perfil_sem_descricao">No description added.</string>
+    <string name="cancelar">Cancel</string>
 </resources>
