@@ -18,6 +18,12 @@ interface GameDao {
     @Query("SELECT * FROM games WHERE appId = :appId LIMIT 1")
     suspend fun getByAppId(appId: Int): Game?
 
+    @Query("SELECT * FROM games WHERE source = :source ORDER BY playtimeMinutes DESC, id DESC LIMIT :limit")
+    suspend fun getTopBySource(source: String, limit: Int): List<Game>
+
+    @Query("SELECT COUNT(*) FROM games WHERE source = :source")
+    suspend fun countBySource(source: String): Int
+
     @Insert
     suspend fun insert(game: Game): Long
 
