@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<appConfig>
+    <application>
+        <name>MeuAplicativo</name>
+        <version>1.0.0</version>
+        <environment>development</environment>
+        <debug>true</debug>
+    </application>
+
+    <settings>
+        <language>pt-BR</language>
+        <theme>dark</theme>
+        <notifications enabled="true"/>
+        <autoUpdate enabled="false"/>
+    </settings>
+
+    <network>
+        <baseUrl>https://api.example.com</baseUrl>
+        <timeout>30000</timeout>
+        <retryAttempts>3</retryAttempts>
+    </network>
+
+    <database>
+        <name>app_database</name>
+        <version>1</version>
+        <cache enabled="true"/>
+    </database>
+
+    <logging>
+        <enabled>true</enabled>
+        <level>DEBUG</level>
+        <saveToFile>false</saveToFile>
+    </logging>
+</appConfig>
+
