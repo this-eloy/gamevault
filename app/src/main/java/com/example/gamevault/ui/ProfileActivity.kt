@@ -1,5 +1,6 @@
 package com.example.gamevault.ui
 
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
@@ -34,8 +35,8 @@ class ProfileActivity : AppCompatActivity() {
     private val db by lazy { AppDatabase.get(this) }
 
     private var profile = Profile()
-    private val catalogAdapter = ProfileGameAdapter()
-    private val steamAdapter = ProfileGameAdapter()
+    private val catalogAdapter = ProfileGameAdapter { openGameDetail(it) }
+    private val steamAdapter = ProfileGameAdapter { openGameDetail(it) }
 
     private val pickPhoto =
         registerForActivityResult(ActivityResultContracts.PickVisualMedia()) { uri ->
@@ -167,6 +168,12 @@ class ProfileActivity : AppCompatActivity() {
         } else {
             binding.imgAvatar.setImageDrawable(null)
         }
+    }
+
+    private fun openGameDetail(game: Game) {
+        val intent = Intent(this, DetailActivity::class.java)
+        intent.putExtra(DetailActivity.EXTRA_GAME_ID, game.id)
+        startActivity(intent)
     }
 
     private fun loadGames() {

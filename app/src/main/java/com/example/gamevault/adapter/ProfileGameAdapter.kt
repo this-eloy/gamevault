@@ -8,7 +8,9 @@ import com.example.gamevault.databinding.ItemGameMiniBinding
 import com.example.gamevault.model.Game
 
 // card compacto para as listas horizontais do perfil
-class ProfileGameAdapter : RecyclerView.Adapter<ProfileGameAdapter.VH>() {
+class ProfileGameAdapter(
+    private val onItemClick: (Game) -> Unit
+) : RecyclerView.Adapter<ProfileGameAdapter.VH>() {
 
     private var games: List<Game> = emptyList()
 
@@ -22,6 +24,7 @@ class ProfileGameAdapter : RecyclerView.Adapter<ProfileGameAdapter.VH>() {
         val game = games[position]
         holder.binding.txtGameName.text = game.name
         holder.binding.imgGame.load(game.imageUri)
+        holder.itemView.setOnClickListener { onItemClick(game) }
     }
 
     override fun getItemCount() = games.size

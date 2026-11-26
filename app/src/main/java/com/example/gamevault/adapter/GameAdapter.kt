@@ -26,6 +26,7 @@ class GameAdapter(
         val game = games[position]
         holder.binding.txtGameName.text = game.name
         holder.binding.imgGame.load(game.imageUri)
+        holder.binding.ratingJogo.rating = game.rating
         holder.itemView.setOnClickListener { onItemClick(game) }
     }
 

@@ -41,4 +41,21 @@
     <string name="perfil_sem_nome">Jogador</string>
     <string name="perfil_sem_descricao">Nenhuma descrição adicionada.</string>
     <string name="cancelar">Cancelar</string>
+
+    <string name="detalhe_origem_label">Origem</string>
+    <string name="detalhe_origem_steam">Steam</string>
+    <string name="detalhe_origem_manual">Catalogado manualmente</string>
+    <string name="detalhe_tempo_label">Tempo jogado</string>
+    <string name="detalhe_sem_tempo">Sem registro</string>
+    <string name="detalhe_tempo_horas_min">%1$d h %2$d min</string>
+    <string name="detalhe_tempo_horas">%1$d h</string>
+    <string name="detalhe_tempo_min">%1$d min</string>
+    <string name="detalhe_abrir_steam">Abrir na Steam</string>
+    <string name="detalhe_compartilhar">Compartilhar jogo</string>
+    <string name="detalhe_compartilhar_texto">Confira %1$s no meu GameVault! Tempo jogado: %2$s</string>
+    <string name="detalhe_voltar">Voltar</string>
+    <string name="detalhe_erro_intent">Nenhum aplicativo disponível para esta ação</string>
+    <string name="detalhe_nota_label">Sua nota</string>
+    <string name="detalhe_sem_nota">Sem nota</string>
+    <string name="detalhe_nota_valor">%1$.1f / 5</string>
 </resources>

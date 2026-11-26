@@ -5,9 +5,19 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.ksp)
 }
+val localPropsFile = rootProject.file("local.properties")
 val localProps = Properties().apply {
-    val file = rootProject.file("local.properties")
-    if (file.exists()) load(file.inputStream())
+    if (localPropsFile.exists()) {
+        localPropsFile.inputStream().use { load(it) }
+    }
+}
+
+val requiredKeys = listOf("STEAM_API_KEY", "STEAM_ID")
+val missingKeys = requiredKeys.filter { !localProps.containsKey(it) }
+if (missingKeys.isNotEmpty() && localPropsFile.exists()) {
+    val current = localPropsFile.readText()
+    val prefix = if (current.isEmpty() || current.endsWith("\n")) "" else "\n"
+    localPropsFile.appendText(prefix + missingKeys.joinToString("\n") { "$it=" } + "\n")
 }
 
 android {
@@ -23,8 +33,8 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
-        buildConfigField("String", "STEAM_API_KEY", "\"${localProps.getProperty("STEAM_API_KEY", "")}\"")
-        buildConfigField("String", "STEAM_ID", "\"${localProps.getProperty("STEAM_ID", "")}\"")
+        buildConfigField("String", "STEAM_API_KEY", "\"${localProps.getProperty("STEAM_API_KEY", "").trim()}\"")
+        buildConfigField("String", "STEAM_ID", "\"${localProps.getProperty("STEAM_ID", "").trim()}\"")
     }
 
     buildTypes {

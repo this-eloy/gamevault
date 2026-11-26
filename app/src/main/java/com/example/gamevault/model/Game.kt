@@ -10,6 +10,7 @@ data class Game(
     val name: String,
     val imageUri: String? = null,
     val playtimeMinutes: Int = 0,
+    val rating: Float = 0f,
 
     val source: String = SOURCE_MANUAL
 ) {

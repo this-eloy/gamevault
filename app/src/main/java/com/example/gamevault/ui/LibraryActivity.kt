@@ -29,7 +29,9 @@ class LibraryActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         adapter = GameAdapter(emptyList()) { game ->
-            // Depois: abrir DetailActivity com Intent explícita
+            val intent = Intent(this, DetailActivity::class.java)
+            intent.putExtra(DetailActivity.EXTRA_GAME_ID, game.id)
+            startActivity(intent)
         }
         binding.recyclerGames.layoutManager = LinearLayoutManager(this)
         binding.recyclerGames.adapter = adapter

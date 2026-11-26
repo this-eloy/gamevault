@@ -41,4 +41,21 @@
     <string name="perfil_sem_nome">Player</string>
     <string name="perfil_sem_descricao">No description added.</string>
     <string name="cancelar">Cancel</string>
+
+    <string name="detalhe_origem_label">Source</string>
+    <string name="detalhe_origem_steam">Steam</string>
+    <string name="detalhe_origem_manual">Cataloged manually</string>
+    <string name="detalhe_tempo_label">Playtime</string>
+    <string name="detalhe_sem_tempo">Not recorded</string>
+    <string name="detalhe_tempo_horas_min">%1$d h %2$d min</string>
+    <string name="detalhe_tempo_horas">%1$d h</string>
+    <string name="detalhe_tempo_min">%1$d min</string>
+    <string name="detalhe_abrir_steam">Open on Steam</string>
+    <string name="detalhe_compartilhar">Share game</string>
+    <string name="detalhe_compartilhar_texto">Check out %1$s in my GameVault! Playtime: %2$s</string>
+    <string name="detalhe_voltar">Back</string>
+    <string name="detalhe_erro_intent">No app available for this action</string>
+    <string name="detalhe_nota_label">Your rating</string>
+    <string name="detalhe_sem_nota">Not rated</string>
+    <string name="detalhe_nota_valor">%1$.1f / 5</string>
 </resources>
